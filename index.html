@@ -20,36 +20,42 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-<div class="wrapper">
-    <div class="header">
-        <a href="index.html"><img class="brand-logo img-responsive" src="images/LC_Logo.png" style="position: left;" ></a>
-        <div class="header-right">
-            <a href="http://svvv.edu.in"><img class="svvv_logo img-responsive" src="images/121.png" style="height: 70px;background-color: #214263;"></a>
-        </div>
-    </div>
-</div>
-    <nav class="navbar-collapse navbar-expand-sm bg-dark navbar-dark sticky">
-  <ul class="navbar-nav">
-    <li class="nav-item1 active">
-      <a class="nav-link" href="index.html">Home</a>
-    </li>
-    <li class="nav-item1">
-      <a class="nav-link" href="E-Gallery.html">E-Gallery</a>
-    </li>
-    <li class="nav-item1">
-      <a class="nav-link" href="Mentor.html">I'm A Mentor</a>
-    </li>
-    <li class="nav-item1">
-      <a class="nav-link" href="About Us.html">About SPOC</a>
-    </li>
-  </ul>
-</nav>
-<div class="alert alert-info">
-    <marquee behavior="scroll" direction="left"><span class="blinking"> Update!! For the Current Notice</span></marquee>
-</div>
-<div style="margin:0px; padding:0px;" id="demo" class="carousel slide" data-ride="carousel">
+  <script src="js/jquery.blink.js"></script>
+  
+
+<header role="banner" id="fh5co-header" class="navbar-fixed-top fh5co-animated slideInDown" style=" background-color: #214263;">
+	<section class="" style="width:100%;">
+            <!-- <div class="row"> -->
+            <nav class="navbar navbar-default " style=" background-color: #214263;">
+		<div class="navbar-header">
+		<!-- Mobile Toggle Menu Button -->
+                    <a onclick="link('http://svvv.edu.in/')" target="_blank"><img src="images/svvv_logo.png" width="95" height="100"></a>
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse" style="background-color: #214263;color: white;padding-top: 24px;float: left;padding-left: 75px;">
+                <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html" data-nav-section="home" style=" margin-left: 80px;font-size: 17;"><span>HOME</span></a></li>
+                <li><a href="E-Gallery.html" data-nav-section="Gallery" style=" margin-left: 75px;font-size: 17;"><span>E-Gallery</span></a></li>
+		<li><a href="Mentor.html" data-nav-section="Mentor" style=" margin-left: 75px;font-size: 17;"><span>I'm a Mentor</span></a></li>
+		<li><a href="About Us.html" data-nav-section="SPOC" style=" margin-left: 75px;font-size: 17;"><span>About SPOC</span></a></li>
+                </ul>    
+                </div>
+                    <div><a onclick="link('https://nptel.ac.in/')" target="_blank"><img src="images/LC_Logo.png" width="250" height="90" style="float: right;"></a>
+		
+		</div>
+                </nav>
+            </section>
+
+ 
+	</header>
+
+<div class="parallax" style="">
+<section class="content" style=" height:430px;margin-top: 25px;">
+	<div class="container" style="">
+	<div class="row">
+	<div style="margin-top:30px;"class="col-sm-8 col-xs-8"
+
+<div style="margin:0px; padding:0px;  " id="demo" class="carousel slide" data-ride="carousel">
 			<ul class="carousel-indicators">
 				<li data-target="#demo" data-slide-to="0" class="active"></li>
 				<li data-target="#demo" data-slide-to="1"></li>
@@ -60,17 +66,11 @@
 				<div class="carousel-inner">
                                     <div class="carousel-item">
 					<img src="images/svvv_id.jpg" alt="SVVV-ID" width="1100" height="500">
-					<div class="carousel-caption">
-						<h3 style="color:#563d7c;"></h3>
-						<p style="color:black;"></p>
-					</div>   
+					  
 				</div>
 					<div class="carousel-item active">
 						<img src="images/nptelp.jpg" alt="Los Angeles" width="1100" height="500">
-					<div class="carousel-caption">
-						<h3 style="color:#563d7c;"></h3>
-						<p style="color:#563d7c;"></p>
-					</div>   
+					   
 					</div>
 			<div class="carousel-item">
 				<img src="images/certificate.jpg" alt="Chicago" width="1100" height="500">
@@ -81,17 +81,11 @@
 			</div>
 				<div class="carousel-item">
 					<img src="images/Egallery-3.jpg" alt="New York" width="1100" height="500">
-					<div class="carousel-caption">
-						<h3 style="color:#563d7c;"></h3>
-						<p style="color:black;"></p>
-					</div>   
+					   
 				</div>
                                 <div class="carousel-item">
 					<img src="images/Egallery-4.jpg" alt="New York" width="1100" height="500">
-					<div class="carousel-caption">
-						<h3 style="color:#563d7c;"></h3>
-						<p style="color:black;"></p>
-					</div>   
+				   
 				</div>
 				</div>
 				<a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -100,8 +94,82 @@
 				<a class="carousel-control-next" href="#demo" data-slide="next">
 					<span class="carousel-control-next-icon"></span>
 				</a>
-	</div>
-<section class="content" style="background-color:  #fbfcfc ; height:350px;">
+	
+</div>
+<div style="margin-top:30px;height: 430px;" class="col-sm-4 col-xs-4">
+	<div class="events">
+		<span class="title pageTitle2" style="">
+			UPCOMING EVENTS
+		</span>
+		<div class="pager" style="opacity:0;">
+			<div class="events-up">
+				<i class="fa fa-angle-up fa-2x">
+					
+				</i>
+			</div>
+			<div class="events-down">
+				<i class="fa fa-angle-down fa-2x">
+				</i>
+			</div>
+		</div>
+		<div class="wrapper" style="position:relative;overflow:hidden;height:312px;">
+			<ul style="position:absolute;margin:0px; top:0px;">
+				<li style="margin: 0px; display: list-item;">
+					<a href="https://www.arohp2019.com/">
+						<div class="date">
+							05<span>Mar</span>
+						</div>
+						<div class="detail">
+						<span class="title1">AROHP-2019</span>
+						<span class="detailData">
+						<span class="ellip">International Symposium on Antibiotic <span class="ellip-line">Resistance - One Health Perspective </span></span></span>
+						</div>
+					</a>
+				</li>
+				<li style="margin: 0px; display: list-item;">
+					<a href="https://www.iitr.ac.in/uasg2019/">
+						<div class="date">06<span>Apr</span></div>
+							<div class="detail"><span class="title1">UASG-2019</span><span class="detailData"><span class="ellip">1ST INTERNATIONAL CONFERENCE ON 
+							<span class="ellip-line">UNMANNED AERIAL SYSTEM IN GEOMATICS - 2019 </span></span></span>
+							</div>
+					</a>
+				</li>
+				<li style="margin: 0px; display: list-item;">
+				<a href="https://www.iitr.ac.in/omsri/">
+					<div class="date">08<span>Feb</span></div>
+						<div class="detail">
+							<span class="title1">OMSRI-2019</span><span class="detailData"><span class="ellip"><span style="white-space: nowrap;">National</span> <span style="white-space: nowrap;">Conference</span> <span style="white-space: nowrap;">in</span> <span style="white-space: nowrap;">Organic</span> <span style="white-space: nowrap;">Chemistry</span></span></span>
+						</div>
+				</a>
+				</li>
+				<li style="margin: 0px; display: list-item;">
+					<a href="https://www.iitr.ac.in/departments/HY/pages/Activities+GIAN__171007C09.html">
+						<div class="date">12<span>Feb</span></div>
+							<div class="detail">
+								<span class="title1">GIAN- 171007C09</span><span class="detailData"><span class="ellip">Transport of viruses and colloids in <span class="ellip-line">variably‐saturated soil and groundwater </span></span></span>
+						</div>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+		
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+
+		
+		
+		
+<div class="alert alert-info">
+    <marquee behavior="scroll" direction="left"><span class="blinking"> Update!! For the Current Notice</span></marquee>
+</div>
+<div class="padding-70 v-bg-stylish v-bg-stylish-v11 padding-70 no-bottom-padding">
+<section class="content" style="background-color: #f7f7f7 ; height:290px;">
 
 	<div class="container" style="background-color:  #fbfcfc ;">
 	<div class="row">
@@ -123,6 +191,7 @@
 	</div>
 
 </section>
+</div>
 
 <section class="content">
 <div class="container">
@@ -131,22 +200,31 @@
 <center><h2><b>Star Performers of Local Chapter,SVVV</b></h2>
 <p><b>for session January-April 18</b></p></center>
 
-<div class="row">
-  <div class="column"><a target="_blank" href="#">
-    <img  class="responsive" src="images/somil.png" alt="somil" style="width:100%;"></a>
+<div class="container-2">
+  <img src="images\somil.png" alt="Avatar" class="image-2" style="width:100%">
+  <div class="overlay-2">
+    <div class="text-2">Somil Jain</div>
   </div>
-  <div class="column"><a href="#">
-    <img  class="responsive"  src="images/sandeep.png" alt="sandeep" style="width:100%;"></a>
+</div>
+    <div class="container-2">
+  <img src="images/sandeep.png" alt="Sandeep" class="image-2" style="width:100%">
+  <div class="overlay-2">
+    <div class="text-2">Sandeep</div>
   </div>
-  <div class="column"><a href="#">
-    <img  class="responsive"  src="images/keshvi.png" alt="keshvi" style="width:100%;"></a>
+</div>
+    <div class="container-2">
+  <img src="images/keshvi.png" alt="Keshvi" class="image-2" style="width:100%">
+  <div class="overlay-2">
+    <div class="text-2">Keshvi</div>
   </div>
+</div>
+
   </div>
 </div>
 </div>
 </div>
 </section>	
-    <section class="content" style="background-color:  #fbfcfc ; height:350px;margin-top:15px;">
+<section class="content" style="background-color:  #fbfcfc ; height:350px;margin-top:15px;margin-left: 90px;float: left;">
 
 	<div class="container" style="background-color:  #fbfcfc ;">
 	<div class="row">
@@ -165,7 +243,7 @@ With huge improvement in second session July- December18,<b> We secured 20th pos
 	</div>
 </section>
     
-<div class="footer" style="background-color: #214263;">
+<div class="footer" style="background-color: #214263;position: fixed;">
 	
 <div class="container">	
     <nav style="background-color:#214263; " class="navbar navbar-expand-lg navbar-dark">
